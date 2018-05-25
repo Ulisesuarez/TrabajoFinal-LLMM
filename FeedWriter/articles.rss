@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+	<title>Desinformación</title>
+	<link>http://www.desinformacion.no</link>
+	<description>Podra leer y de ahí en adelante hagase usted responsable</description>
+	<language>es</language>
+	<copyright>Copyright hold by Pinocho</copyright>
+	<pubdate>Fri, 25 May 2018 18:47:29 +0200</pubdate>
+<item>
+	<title>RSSFeed</title>
+	<description>This is a description</description>
+	<link>http://www.vogella.com/tutorials/RSSFeed/article.html</link>
+	<author>nonsense@somewhere.de (Lars Vogel)</author>
+	<guid>http://www.vogella.com/tutorials/RSSFeed/article.html</guid>
+
+</item>
+
+</channel>
+</rss>

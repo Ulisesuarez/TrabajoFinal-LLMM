@@ -1,0 +1,16 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+    <channel>
+        <title>Desinformación </title>
+        <link>http://www.desinformacion.no</link>
+        <description> Podra leer y de ahí en adelante hagase usted responsable</description>
+        <item>
+            <title>El equilibrio del miedo</title>
+            <link>http://www.desinformacion.no/?page=0&amp;news=0</link>
+            <description>New RSS tutorial on W3Schools</description>
+        </item>
+    </channel>
+
+</rss>
