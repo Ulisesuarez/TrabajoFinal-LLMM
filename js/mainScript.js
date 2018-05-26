@@ -161,7 +161,18 @@ $(document).ready(function(){
                     "class":"googleplus",
                     target: "_blank"
                 });
-
+            s1.click(function(){
+                modificarMeta(noticia,page,news)
+            })
+            s2.click(function(){
+                modificarMeta(noticia,page,news)
+            })
+            s3.click(function(){
+                modificarMeta(noticia,page,news)
+            })
+            s4.click(function(){
+                modificarMeta(noticia,page,news)
+            })
             s1.appendTo(spanVar);
             s2.appendTo(spanVar);
             s3.appendTo(spanVar);
@@ -353,6 +364,51 @@ $(document).ready(function(){
             }
 
             divBody.appendTo(section);
+            let spanVar = $("<span/>",{
+                id: "social-media2"}
+            );
+            let s1=
+                $("<a/>",{
+                    href:"https://www.facebook.com/sharer/sharer.php?u=www.desinformacion.no",
+                    "class":"facebook",
+                    target: "_blank"
+                });
+            let s2=
+                $("<a/>",{
+                    href:"https://twitter.com/intent/tweet",
+                    "class":"twitter",
+                    target: "_blank"
+                });
+            let s3=
+                $("<a/>",{
+                    href:"https://instagram.como",
+                    "class":"instagram",
+                    target: "_blank"
+                });
+            let s4=
+                $("<a/>",{
+                    href:"\"https://plus.google.com/share?url=",
+                    "class":"googleplus",
+                    target: "_blank"
+                });
+            s1.click(function(){
+                modificarMeta(noticia,page,news)
+            });
+            s2.click(function(){
+                modificarMeta(noticia,page,news)
+            });
+            s3.click(function(){
+                modificarMeta(noticia,page,news)
+            });
+            s4.click(function(){
+                modificarMeta(noticia,page,news)
+            });
+            s1.appendTo(spanVar);
+            s2.appendTo(spanVar);
+            s3.appendTo(spanVar);
+            s4.appendTo(spanVar);
+
+            spanVar.appendTo(section);
 
             section.appendTo($('#entrada'))
 
@@ -373,6 +429,13 @@ let getUrlParameter = function getUrlParameter(sParam) {
         }
     }
 };
+
+function modificarMeta(noticia, page, news) {
+   $("meta[property='og:image']").setAttribute(("content", noticia.imgbig));
+   $("meta[property='og:title']").setAttribute(("content", noticia.title));
+   $("meta[property='og:url']").setAttribute(("content", "https://cdn.rawgit.com/Ulisesuarez/TrabajoFinal-LLMM/master/main.html?page="+page+"&news="+news));
+   $("meta[property='og:description']").setAttribute(("content", noticia.summary));}
+
 /*http://desinformacion.no/?page=0&news=0.
 
 let page = getUrlParameter('page');

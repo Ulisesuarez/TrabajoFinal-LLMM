@@ -24,3 +24,5 @@ Requisitos funcionales:
 - Volver al inicio desde el footer.
 
 - Compartir el sitio y los artículos en redes sociales y a través de un feed.
+
+Para consultar detalles de la planificación y análisis consultar carpeta documentación

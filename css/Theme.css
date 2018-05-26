@@ -412,13 +412,21 @@ a.googleplus:hover{background-position: -180px -30px;}
     top:250px;
     left:78vw;
 }
-
+#social-media2{
+    float:right;
+    margin-top:-30px;
+}
 #social-mediaSect{
     float:right;
     margin-top: -5px;
     margin-right: 5px;
 }
 #social-mediaSect a{
+    border-radius: 0.5em;
+
+}
+
+#social-media2 a{
     border-radius: 0.5em;
 
 }
