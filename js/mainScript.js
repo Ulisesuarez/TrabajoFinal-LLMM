@@ -1,4 +1,5 @@
-
+let numPag=3;
+let numNoticiasxPag=3;
 let count= 0;
 $(document).ready(function(){
     let page = getUrlParameter('page');
@@ -27,6 +28,10 @@ $(document).ready(function(){
         crearExpandida('randomlink')
     });
     $('#addNewsbot').click(function(){
+        if(count>2){
+            console.log("WTF")
+            $('#addNewsbot').css("display","none");
+        }
 
         $.getJSON( "data/"+count+".json", function( jsonObject ) {
         cargar( jsonObject, true );
@@ -194,6 +199,10 @@ $(document).ready(function(){
     }
     let iner;
     $( window ).scroll(function() {
+        if(count>2){
+            console.log("WTF")
+            $('#addNewsbot').css("display","none");
+        }
 
         if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10 && count!==iner) {
             let height = $(window).scrollTop();
@@ -246,16 +255,14 @@ $(document).ready(function(){
     let newsArray=[];
 
 
-    let numPag=3;
-    let numNoticiasxPag=3;
+
     for (i = 0; i < numPag; i++) {
         pagArray.push(i)
 
     }
     for (i = 0; i < numNoticiasxPag; i++) {
         newsArray.push(i)
-    }console.log(pagArray)
-    console.log(newsArray)
+    }
 
 
     function crearExpandida(link) {
@@ -369,25 +376,25 @@ $(document).ready(function(){
             );
             let s1=
                 $("<a/>",{
-                    href:"https://www.facebook.com/sharer/sharer.php?u=www.desinformacion.no",
+                    href:"https://www.facebook.com/sharer/sharer.php?u=https%3A//cdn.rawgit.com/Ulisesuarez/TrabajoFinal-LLMM/master/main.html?page="+numJson+"%26news="+numObject,
                     "class":"facebook",
                     target: "_blank"
                 });
             let s2=
                 $("<a/>",{
-                    href:"https://twitter.com/intent/tweet",
+                    href:"https://twitter.com/home?status=https%3A//cdn.rawgit.com/Ulisesuarez/TrabajoFinal-LLMM/master/main.html?page="+numJson+"%26news="+numObject,
                     "class":"twitter",
                     target: "_blank"
                 });
             let s3=
                 $("<a/>",{
-                    href:"https://instagram.como",
+                    href:"https://instagram.com/share?url=https%3A//cdn.rawgit.com/Ulisesuarez/TrabajoFinal-LLMM/master/main.html?page"+numJson+"%26news="+numObject,
                     "class":"instagram",
                     target: "_blank"
                 });
             let s4=
                 $("<a/>",{
-                    href:"\"https://plus.google.com/share?url=",
+                    href:"\"https://plus.google.com/share?url=https%3A//cdn.rawgit.com/Ulisesuarez/TrabajoFinal-LLMM/master/main.html?page"+numJson+"%26news="+numObject,
                     "class":"googleplus",
                     target: "_blank"
                 });

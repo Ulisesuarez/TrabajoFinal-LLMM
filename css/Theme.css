@@ -61,6 +61,11 @@ body {
         left:10%;
         font-size: 1.5em;
     }
+    .rss{
+        position: relative;
+        left: -200px;
+        top:-100px
+    }
 }
 /* Extra small devices (phones, up to 480px) */
 @media (min-width: 575px) and  (max-width: 627px) {
@@ -93,9 +98,14 @@ body {
         font-size: 2em;
         left:15%;
     }
+    .rss{
+        position: relative;
+        left: 30px;
+        top:-100px;
+    }
 }
 
-@media (min-width: 628px) and (max-width: 991px) {
+@media (min-width: 628px) and (max-width: 768px) {
     #banner{
         display: none;
     }
@@ -121,7 +131,43 @@ body {
         font-size: 3em;
         left:28%;
     }
-
+    .rss{
+        position: relative;
+        left: 30px;
+        top:-100px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #banner{
+        display: none;
+    }
+    .textoFooter{
+        position: relative;
+        left: 10vw;
+    }
+    section{
+        background-color: #cce6ff;
+        margin: 0em !important;
+        padding: 0.5em !important;
+        margin-right: 0px !important;
+        border-radius: 1em;
+        margin-top: 1em !important;
+    }
+    #linksNav{
+        margin-left: -10%;
+    }
+    #logo{
+        width: 150px;
+    }
+    .navbar-text {
+        font-size: 3em;
+        left:28%;
+    }
+    .rss{
+        position: relative;
+        left: 30px;
+        top:100px;
+    }
 }
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -429,4 +475,9 @@ a.googleplus:hover{background-position: -180px -30px;}
 #social-media2 a{
     border-radius: 0.5em;
 
+}
+
+.rss{
+    width: 20%;
+    height: auto;
 }
